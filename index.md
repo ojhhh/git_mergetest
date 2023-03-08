@@ -47,7 +47,29 @@
 - git switch (이동할 브런치 이름)
 - ex) git switch branchtest
 
+## 저장소 병합
+
+- git merge (병합할 브런치 이름)
+
+## merge 병합 중 충돌
+
 ## 브런치 제거
 
 - git branch -d (제거할 브런치 이름)
 - ex) git branch -d branchtest
+
+## 브런치 생성 후 push를 해서 원격 저장조에 브런치 생성
+
+- git branch dev
+- git pull origin dev -> Fatal: couldn't find remote ref dev
+- git branch -a
+- \* dev
+- main
+- remotes/origin/main
+- git push origin dev
+- git pull origin dev -> 성공
+- git branch -a
+- \* dev
+- main
+- remotes/origin/dev
+- remotes/origin/main
